@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height:100%;
+            overflow:hidden;
+        }
+        #slider {
+            position: relative;
+            height: 600px;
+        }
+
+        figure {
+            position: absolute;
+        }
+
+        figure img {
+            width: 100%;
+        }
+        .circle{
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            bottom: -40%;
+            z-index: 10;
+        }
+        .circle span{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-color: #ccc;
+            text-align: center;
+            border-radius: 18px;
+            cursor: pointer;
+            margin-right:10px;
+        }
+        .circle span.current{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="slider">
+    <figure>
+        <img src="images/banner1.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="images/banner2.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="images/banner10.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="images/banner11.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="images/banner12.jpg" alt="">
+    </figure>
+</div>
+
+<script src="jquery-3.3.1.js"></script>
+<script src="js.js"></script>
+<script>
+</script>
+</body>
+</html>
